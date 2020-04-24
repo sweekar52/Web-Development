@@ -50,7 +50,8 @@ hr{
 .top-container{
     background-color: #e4f9f5;
     position: relative;
-    padding-top: 100px;
+    padding: 200px 0 100px;
+
 }
 
 .middle-container{
@@ -64,14 +65,14 @@ hr{
 
 .top-cloud{
     position: absolute;
-    top: 40px;
-    right: 600px;
+    top: 80px;
+    right: 550px;
 }
 
 .bottom-cloud{
     position: absolute;
-    left: 600px;
-    bottom: 300px;
+    left: 550px;
+    bottom: 350px;
 }
 
 .skill-row{
