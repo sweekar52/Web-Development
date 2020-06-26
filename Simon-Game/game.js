@@ -36,8 +36,18 @@ function animatePress(currentColor){
     }, 100);
 }
 
-$(document).keydown(function(event){
+function start(){
     if (!started){
+        $(".start").hide();
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+}
+
+$(document).keydown(function (event){
+    if (!started){
+        $(".start").hide();
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
@@ -62,5 +72,6 @@ function checkAnswer(currentLevel){
         started = false;
         level = 0;
         gamePattern = [];
+        $(".start").show();
     }
 }
